@@ -10,6 +10,7 @@ import vyshnav.io.models.FlightSchedule;
 import vyshnav.io.models.FlightScheduleSeat;
 import vyshnav.io.models.FlightSeat;
 
+// Doubt: Do we need @NonNull in repository functions' arguments
 public class FlightRepository {
 	
 	private Map<String, Airport> airportMap;
@@ -22,6 +23,10 @@ public class FlightRepository {
 	public FlightRepository() {
 		this.airportMap = new HashMap<>();
 		this.airlineMap = new HashMap<>();
+		this.flightMap = new HashMap<>();
+		this.flightScheduleMap = new HashMap<>();
+		this.flightSeatMap = new HashMap<>();
+		this.flightScheduleSeatMap = new HashMap<>();
 	}
 	
 	public Airport createAirport(Airport airport) {

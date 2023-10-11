@@ -38,8 +38,8 @@ public class FlightController {
 		return flightService.createFlightScheduleSeat(seatNumber, seatType).getId();
 	}
 
-	public Airline getAirline(@NonNull String id) {
-		return flightService.getAirline(id);
+	public Airline getAirline(@NonNull String airlineId) {
+		return flightService.getAirline(airlineId);
 	}
 	
 	public Airport getAirport(@NonNull String airportId) {
